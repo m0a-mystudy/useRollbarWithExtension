@@ -8,22 +8,23 @@ testExtensionForRollbar
 
 ## Development
 
-    npm run dev -- chrome
-    npm run dev -- firefox
-    npm run dev -- opera
-    npm run dev -- edge
+    npm run dev:chrome
 
-## Build
+## install Extension to chrome
 
-    npm run build -- chrome
-    npm run build -- firefox
-    npm run build -- opera
-    npm run build -- edge
+access to chrome://extensions/
+and toggle switch on at Developper mode
+click "Load unpacked"
 
-## Environment
+and select `{yourworkspace}/useRollbarWithExtension/dist/chrome`
+that'all 
 
-The build tool also defines a variable named `process.env.NODE_ENV` in your scripts. 
+## check background page
+access to chrome://extensions/
+Details -> Inspect views/background page -> networktabs
 
-## Docs
+check
+Request URL: https://api.rollbar.com/api/1/item/
 
-* [webextension-toolbox](https://github.com/HaNdTriX/webextension-toolbox)
+
+
