@@ -1,0 +1,17 @@
+{
+  "name": "useRollbarWithExtension",
+  "version": "0.0.1",
+  "description": "testExtensionForRollbar",
+  "scripts": {
+    "dev": "npm run dev:chrome",
+    "build": "npm run build:chrome",
+    "dev:chrome": "webextension-toolbox dev chrome",
+    "build:chrome": "webextension-toolbox build chrome"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  },
+  "dependencies": {
+    "rollbar": "2.3.8"
+  }
+}
